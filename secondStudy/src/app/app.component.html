@@ -1,0 +1,6 @@
+<!--[login컴포넌트의변수(받는값)]='보낼값'-->
+<app-login
+  *ngIf="loginBool"
+  [visible1]='loginBool'
+  (sendMyEvent)="getEventThanks($event)"></app-login>
+<app-dashboard *ngIf="boardBool"></app-dashboard>

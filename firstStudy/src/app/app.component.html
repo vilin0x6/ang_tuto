@@ -1,0 +1,9 @@
+<div *ngIf="visible">
+    <div>Welcome</div>>
+    <input type="text" placeholder="id" [(ngModel)]="id"/>
+    <input type="text" placeholder="password" [(ngModel)]="pwd"/>
+    <button (click)='tryToLogin()'>Login</button>
+</div>
+<app-hello *ngIf="visible1"></app-hello> <!--셀렉터를 태그처럼 사용-->
+<br>
+<app-world *ngIf="visible2"></app-world>
